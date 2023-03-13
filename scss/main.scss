@@ -1,0 +1,29 @@
+@import './fonts';
+@import './mixins';
+@import './variables';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container1 {
+    max-width: 1260px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+.btn1 {
+    max-width: 320px;
+    padding: 10px 20px;
+
+}
+
+@import './all-blocks/all-blocks'
