@@ -326,7 +326,7 @@ nav a {
 }
 @media (max-width: 1024px) {
   .about__cards-right {
-    padding: 70px 80px;
+    padding: 70px 50px;
   }
 }
 
@@ -432,7 +432,7 @@ nav a {
   background-image: url("../../images/Background__image.png");
   margin: 0 auto;
   background-size: cover;
-  padding-top: 80px;
+  padding: 80px 0 20px 0;
 }
 .number h2 {
   font-weight: 500;
@@ -447,6 +447,7 @@ nav a {
 @media (max-width: 768px) {
   .number .number__card {
     flex-direction: column;
+    row-gap: 30px;
   }
 }
 .number .number__card-left {
@@ -527,4 +528,146 @@ nav a {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #EE1B24;
+}
+
+.work {
+  max-width: 1440px;
+  min-height: 336px;
+  background-color: #161A2B;
+  color: #fff;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+.work h2 {
+  padding-bottom: 30px;
+}
+
+.work__card {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .work__card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 30px;
+  }
+}
+@media (max-width: 490px) {
+  .work__card {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}
+.work__card-box {
+  max-width: 400px;
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.work__card-box h3 {
+  padding-bottom: 20px;
+}
+
+.accordion1 {
+  --bs-accordion-btn-active-icon: url(data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="%230a58ca"%3e%3cpath fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/%3e%3c/svg%3e);
+  --bs-accordion-color: var(--bs-body-color);
+  --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+  --bs-accordion-border-width: var(--bs-border-width);
+  --bs-accordion-border-radius: var(--bs-border-radius);
+  --bs-accordion-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
+  --bs-accordion-btn-padding-y: 1rem;
+  --bs-accordion-btn-color: var(--bs-body-color);
+  --bs-accordion-btn-bg: var(--bs-accordion-bg);
+  --bs-accordion-btn-icon: url(data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="%23212529"%3e%3cpath fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/%3e%3c/svg%3e);
+  --bs-accordion-btn-icon-width: 1.25rem;
+  --bs-accordion-btn-icon-transform: rotate(-180deg);
+  --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
+  --bs-accordion-btn-active-icon: url(data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="%230a58ca"%3e%3cpath fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/%3e%3c/svg%3e);
+  --bs-accordion-btn-focus-border-color: #86b7fe;
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  --bs-accordion-body-padding-x: 1.25rem;
+  --bs-accordion-body-padding-y: 1rem;
+  --bs-accordion-active-color: var(--bs-primary-text);
+}
+
+.accordion-body {
+  color: #fff;
+}
+
+.accordion-button {
+  color: #fff;
+}
+
+.accordion-button:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.accordion-button {
+  transition: 1s;
+}
+
+.title__read {
+  margin: 50px 0;
+}
+
+.reading {
+  display: grid;
+  overflow-x: scroll;
+  grid-template-areas: "a b b c c d" "e e f f g g" "h j j k k l";
+}
+
+.reading__card:nth-child(1) {
+  grid-area: a;
+}
+
+.reading__card:nth-child(2) {
+  grid-area: b;
+}
+
+.reading__card:nth-child(3) {
+  grid-area: c;
+}
+
+.reading__card:nth-child(4) {
+  grid-area: d;
+}
+
+.reading__card:nth-child(5) {
+  grid-area: e;
+}
+
+.reading__card:nth-child(6) {
+  grid-area: f;
+}
+
+.reading__card:nth-child(7) {
+  grid-area: g;
+}
+
+.reading__card:nth-child(8) {
+  grid-area: h;
+}
+
+.reading__card:nth-child(9) {
+  grid-area: j;
+}
+
+.reading__card:nth-child(10) {
+  grid-area: k;
+}
+
+.reading__card:nth-child(11) {
+  grid-area: l;
+}
+
+.reading__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(183, 183, 183);
+}
+.reading__card img {
+  padding: 35px;
 }/*# sourceMappingURL=main.css.map */
