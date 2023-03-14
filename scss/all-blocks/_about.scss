@@ -4,13 +4,21 @@
 
     &__cards {
         display: flex;
-        
+
+         @include phone {
+            flex-direction: column;
+         }
 
         &-left {
             max-width: 720px;
-            height: 582px;
+            min-height: 582px;
             background-color: $section-bg;  
-            padding:80px 0 20px 120px;
+            padding:80px 10px 20px 120px;
+
+            @include large-tablet {
+                padding:80px 0 20px 25px;
+            }
+            
 
         }
 
@@ -55,13 +63,19 @@
 }
 
 .about__cards-right {
-    width: 720px;
-    height: 582px;
+    max-width: 720px;
+    min-height: 582px;
     background-image: url('../../images/Power.png');
     display: flex;
     align-items: center;
     justify-content: center;
-        
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:  70px 150px;
+    
+    @include large-tablet {
+        padding:  70px 80px;
+    }
 }
 
 .rigth__box {
@@ -71,7 +85,41 @@
     grid-template-rows: 1fr 1fr;
     grid-gap: 15px;
 
-    img {
-        padding-left: 40px;
+    @include tablet1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
     }
+
+    @include phone {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        
+    }
+
+    @include min-phone {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+
+    img {
+        padding: 0 20px 0 24px;
+    }
+
+    h2 {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;  
+    }
+
+    p {
+        padding-left: 35px;
+    }
+}
+
+.about__sapn {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 150%;
 }

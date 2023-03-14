@@ -27,3 +27,9 @@
         @content;
     }
 }
+
+@mixin min-phone {
+    @media (max-width:490px) {
+        @content;
+    }
+}

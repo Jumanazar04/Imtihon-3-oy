@@ -1,0 +1,121 @@
+.number {
+    max-width: 1440px;
+    min-height: 993px;
+    background-image: url('../../images/Background__image.png');
+    margin: 0 auto;
+    background-size: cover;
+    padding-top: 80px;
+
+    h2 {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 150%;
+        color: #fff;
+        margin-bottom: 60px;
+    }
+
+    .number__card {
+        display: flex;
+
+        @include tablet {
+            flex-direction: column;
+        }
+
+
+    }
+
+    .number__card-left {
+        background-color: #fff;
+        max-width: 600px;
+        
+
+        .number__card-box {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            height: 40px;
+            
+        }
+
+        .number__card-box1 {
+            background-color: $hero-bg;
+            padding: 30px;
+            height: 600px;
+            overflow-x: scroll;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+        }
+    }
+}
+
+.number__card-right {
+    height: 640px;
+    max-width: 600px;
+    background-color: $section-bg;
+    padding: 50px;
+
+    .form1 {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+
+
+       
+        
+        
+
+    }
+
+    .input {
+        max-width: 600px;
+        padding: 10px;
+        border: 2px solid $section-bg;
+        border-bottom: 2px solid $hero-bg ;
+        background-color: $section-bg;
+        opacity: .6;
+        color: #fff;
+    }
+
+    h3 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 130%;
+        color: #fff;
+    }
+
+    .check {
+        display: flex;
+        column-gap: 20px;
+
+        span {
+            color: #fff;
+            opacity: .6;
+        }
+    }
+}
+
+.form1__btn {
+    background-color: $section-bg;
+    border: 2px solid $buttun-bg;
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: $buttun-bg; 
+    
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: $buttun-bg; 
+  }
