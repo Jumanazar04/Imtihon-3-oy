@@ -1,5 +1,5 @@
 nav {
-    padding: 30px 0;
+    padding: 12px 0;
     
 
     .menu {
@@ -28,7 +28,7 @@ nav {
             display: flex;
             align-items: center;
             column-gap: 87px;
-
+            transition: 1s;
             img {
                 @include large-tablet {
                     width: 24px;
@@ -54,11 +54,11 @@ nav {
                 height: 30vh;
                 flex-direction: column;
                 position: absolute;
-                top: 12%;
+                top: 60px;
                 right: 0;
-                row-gap: 25px;
-                padding: 10px;
+                padding: 80px 20px;
                 align-items: flex-start;
+                background-color: #fff;
             }
 
             &-box {
@@ -108,4 +108,103 @@ nav {
 }
 .menu__card.active {
     transform: translateY(0);
+}
+
+.hero {
+    max-width: 1440px;
+    min-height: 600px;
+    margin: 0 auto;
+    background-color: $hero-bg;
+    padding: 88px 0 40px 0;
+
+    &__card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include phone {
+            text-align: center;
+        }
+
+    
+    }
+
+    
+
+    h1 {
+        max-width: 660px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 46px;
+
+        @include tablet {
+            font-size: 24px;
+            line-height: 31px;
+        }
+        @include phone{
+            padding-bottom: 24px;
+            max-width: 472px;
+        }
+    
+    }
+
+    p {
+        max-width: 628px;
+        font-weight: 400;
+        font-size: 24px;
+        padding: 32px 0 40px 0;
+        line-height: 31px;
+        
+        @include tablet {
+            font-size: 18px;
+            line-height: 23px;
+        }
+        @include phone {
+            max-width: 472px;
+        }
+    }
+
+    .book-img {
+         @include tablet1 {
+            width: 370px;
+         }
+         @include tablet {
+            width: 232px;
+         }
+    }
+
+    .picture1 {
+        @include phone {
+            display: none;
+        }
+    }
+
+    .picture2 {
+        @include phone {
+            display: block;
+        }
+    }
+}
+
+.btn2 {
+    background-color: $buttun-bg;
+    color: #fff;
+    border: 1px solid $buttun-bg;
+    margin-right: 20px;
+    @include phone {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}
+
+.btn3 {
+    
+    @include phone {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}
+
+.picture2 {
+    display: none;
 }
