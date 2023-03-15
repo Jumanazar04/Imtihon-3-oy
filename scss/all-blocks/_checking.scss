@@ -1,0 +1,50 @@
+.checking {
+
+
+    h2 {
+        padding: 60px 0;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 150%;
+    }
+
+    .checking__form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    .form__div {
+        display: flex;
+        justify-content: space-between;
+
+        @include tablet {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            row-gap: 40px;
+        }
+    }
+
+
+    input {
+        max-width: 476px;
+        padding: 20px;
+        background: transparent;
+        border: transparent;
+        border-bottom: 2px solid $hero-bg;
+    }
+
+    .btn4 {
+        background: transparent;
+        color: black;
+        font-weight: 700;
+    }
+
+    .checkbox {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+    }
+}

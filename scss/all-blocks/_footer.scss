@@ -1,0 +1,42 @@
+.footer {
+    min-height: 100px;
+    background-color: $section-bg;
+    padding: 50px 0;
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        margin: 40px 0 0 0;
+
+        @include tablet2 {
+            flex-direction: column;
+            row-gap: 20px;
+        }
+
+        li {
+            display: flex;
+            column-gap: 20px;
+            font-size: 18px;
+
+            @include tablet2 {
+                justify-content: space-between;
+                font-size: 14px;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            list-style: none;
+            color: #fff;
+
+            @include tablet2 {
+                font-size: 14px;
+            }
+        }
+    }
+
+    span {
+        color: $hero-bg;
+        opacity: .6;
+    }
+}

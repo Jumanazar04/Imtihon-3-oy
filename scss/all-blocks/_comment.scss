@@ -1,0 +1,84 @@
+.coment {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: $hero-bg;
+    padding: 50px 0;
+
+    h2 {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 150%;
+        margin: 50px 0;
+    }
+}
+
+.comment__card1 {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+
+}
+
+.comment__card {
+    max-width: 800px;
+    background-color: #fff;
+    margin: 0 auto;
+
+    p {
+        padding: 50px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+
+        @include tablet {
+            font-size: 18px;
+        }
+
+        @include phone {
+            font-size: 14px ;
+        }
+    }
+
+    span {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+
+        @include tablet {
+            font-size: 14px;
+        }
+    }
+
+    h3 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 150%;
+
+        @include phone {
+            font-size: 18px;
+        }
+    }
+}
+
+.carousel-item img {
+    @include tablet {
+        width: 104px;
+    }
+}
+
+.carousel-indicators {
+    bottom: -50px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+
+    @include tablet1 {
+        position: absolute;
+        bottom: -40px;
+    }
+    
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: #EE1B24
+}    
